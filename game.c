@@ -83,6 +83,25 @@ bool checkMove(int oldRow, char oldColumn, int newRow, char newColumn, struct ga
 
     int validColumn = (('A' <= newColumn) && (newColumn <= 'H')) || (('a' <= newColumn && (newColumn <= 'h')));
     int cc = validColumn && ((newColumn == oldColumn - 1) || (newColumn == oldColumn + 1));
+    int vr = ((1 <= newRow) && (newRow <= 8));
+    int rc = newColumn && ((newRow == oldRow - 1) || (newRow == oldRow + 1));
+    return (bool) (rc + cc); //idek if this will work or not but fuck it
+}
 
+void removePiece(int row, char column, struct game * g){
+    int position = 0;
+    int length = (g -> player1 + g -> player2);
+
+    for(; position < length; ++position) {
+        if ((g->coords[position].row == row) && (g->coords[position].column == column)) {
+             break;
+            //should make this do something really
+        }
+        int temporaryRow = g -> coords[position].row;
+        char temporaryColumn = g -> coords[position].column;
+        int temporaryPlayer = g -> coords[position].player;
+
+
+    }
 }
 
