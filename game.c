@@ -101,7 +101,14 @@ void removePiece(int row, char column, struct game * g){
         char temporaryColumn = g -> coords[position].column;
         int temporaryPlayer = g -> coords[position].player;
 
+        g -> coords[position].row = g -> coords[length - 1].row;
+        g -> coords[position].column = g -> coords[length - 1].column;
+        g -> coords[position].player = g -> coords[length - 1].player;
+        g -> coords[length - 1].row = temporaryRow;
+        g -> coords[length - 1].column = temporaryColumn;
+        g -> coords[length - 1].player = temporaryPlayer;
 
+        g -> coords = realloc(g -> coords, (length - 1) * sizeof(struct cs));
     }
 }
 
