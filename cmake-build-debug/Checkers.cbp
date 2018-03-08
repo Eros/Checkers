@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="F:/C++/Projects/Checkers/game.c">
+			<Option target="Checkers"/>
+		</Unit>
 		<Unit filename="F:/C++/Projects/Checkers/game.h">
 			<Option target="Checkers"/>
 		</Unit>

@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Checkers.dir/main.c.obj"
+  "CMakeFiles/Checkers.dir/game.c.obj"
   "Checkers.pdb"
   "Checkers.exe"
   "Checkers.exe.manifest"

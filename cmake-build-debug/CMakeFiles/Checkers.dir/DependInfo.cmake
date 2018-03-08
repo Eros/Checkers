@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "F:/C++/Projects/Checkers/game.c" "F:/C++/Projects/Checkers/cmake-build-debug/CMakeFiles/Checkers.dir/game.c.obj"
   "F:/C++/Projects/Checkers/main.c" "F:/C++/Projects/Checkers/cmake-build-debug/CMakeFiles/Checkers.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
