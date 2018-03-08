@@ -65,5 +65,24 @@ void makeBoard(struct game * g){
     printf("-------------\n");
 }
 
+bool checkMove(int oldRow, char oldColumn, int newRow, char newColumn, struct game * g){
+    int player = searchCoordinates(oldColumn, oldRow, g);
+    int toSearch = searchCoordinates(newColumn, newRow, g);
 
+    if(player == 0){
+        return false;
+        printf("Player has been defined as 0");
+    }
+    //prevents players from doing moves on a place that is already occupied
+    if(player == 1 && toSearch == 1){
+        return false;
+    }
+    if(player == 2 && toSearch == 2){
+        return false;
+    }
+
+    int validColumn = (('A' <= newColumn) && (newColumn <= 'H')) || (('a' <= newColumn && (newColumn <= 'h')));
+    int cc = validColumn && ((newColumn == oldColumn - 1) || (newColumn == oldColumn + 1));
+
+}
 
