@@ -43,3 +43,27 @@ int searchCoordinates(char column, int row, struct game * g){
     //should never happen
 }
 
+void makeBoard(struct game * g){
+    printf("A B C D E F G\n");
+    printf("-------------\n");
+    int currentRow;
+    int currentColumn;
+    for(currentRow = 8; currentRow > 0; --currentRow){
+        printf("%d |", currentRow);
+    }
+    for(currentColumn = 'A'; currentColumn <= 'H'; ++currentColumn){
+        int search = searchCoordinates(currentColumn, currentRow, g);
+        if(search == 0){
+            printf(" ");
+        } else if(search == 1){
+            printf(" *");
+        } else {
+            printf(" +");
+        }
+    }
+    printf("|\n");
+    printf("-------------\n");
+}
+
+
+
