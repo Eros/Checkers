@@ -162,22 +162,22 @@ void handleBoardDefaultValues(struct game * g) {
     //todo
 }
 
-void startGame(void){
-    struct game * g = malloc(sizeof(struct game));
-    g -> coords = malloc(24 * sizeof(struct cs));
+void startGame(void) {
+    struct game *g = malloc(sizeof(struct game));
+    g->coords = malloc(24 * sizeof(struct cs));
 
-    g -> player1 = 12;
-    g -> player2 = 12;
+    g->player1 = 12;
+    g->player2 = 12;
 
     handleBoardDefaultValues(g);
     makeBoard(g);
 
     int firstPlayer = 0;
     int random = rand();
-    if(random % 2 == 0){
+    if (random % 2 == 0) {
         firstPlayer = 1;
     }
-    if(random % 2 == 1){
+    if (random % 2 == 1) {
         firstPlayer = 2;
     }
 
@@ -192,27 +192,47 @@ void startGame(void){
 
     char command;
 
-    while(scanf(" %c ", &command) != 0){
-        if(winCheck(g) != 0){
+    while (scanf(" %c ", &command) != 0) {
+        if (winCheck(g) != 0) {
             printf("Player %d won the game! Play again? Y/N", winCheck(g));
-            if(command == 'y'){
+            if (command == 'y') {
                 //todo replay
             }
-            if(command == 'p'){
+            if (command == 'p') {
                 makeBoard(g);
             }
-            if(command == 'q'){
+            if (command == 'q') {
                 printf("Someone has decided to rage quit!");
                 return;
             }
-            if(command == 'm'){
+            if (command == 'm') {
                 printf("Please enter the destination you wish to move to: \n");
                 int oldRow = 0;
                 char oldColumn = 0;
                 int newRow = 0;
                 char newColumun = 0;
+                scanf(" %c", &oldColumn);
+                scanf(" %d", &oldRow);
+                scanf(" %c", &newColumun);
+                scanf(" %d", &newRow);
+
+                if (checkMove(oldRow, oldColumn, newRow, newColumun, g)) {
+                    printf("Move successful!");
+                    handleMove(oldRow, oldColumn, newRow, newColumun, g);
+                    makeBoard(g);
+                } else if (!checkMove(oldRow, oldColumn, newRow, newColumun, g)){
+                    printf("That move is not valid! Please try again");
+                }
+            }
+            if(command == 'score'){
+                printf('Score:\n Player1: %d\n Player2: %d\n', 12 - g -> player1, 12 - g -> player2);
+            }
+            if(command != 'm' || command != 'quit' || command != 'score' || command != 'print'){
+                printf("That command is not valid!");
             }
         }
+        free(g -> coords);
+        free(g);
     }
 }
 
