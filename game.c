@@ -158,3 +158,11 @@ void handleMove(int oldRow, char oldColumn, int newRow, char newColumn, struct g
     return;
 }
 
+void handleBoardDefaultValues(struct game * g) {
+    //todo
+}
+
+void startGame(void){
+    struct game * g = malloc(sizeof(struct game));
+    g -> coords = malloc(24 * sizeof(struct cs));
+}
