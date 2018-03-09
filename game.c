@@ -112,3 +112,24 @@ void removePiece(int row, char column, struct game * g){
     }
 }
 
+void handleMove(int oldRow, char oldColumn, int newRow, char newColumn, struct game * g){
+    if(!checkMove(oldRow, oldColumn, newRow, newColumn, g)){
+        return; //again should never happen
+    }
+
+    int player = searchCoordinates(oldColumn, oldRow, g);
+    int search = searchCoordinates(newRow, newColumn, g);
+    int length = g -> player1 + g -> player2;
+
+    struct cs * coords = g -> coords;
+    if((player == 1 && search == 0) || (player == 2 && search == 0)){
+        for(int i = 0; i < length; ++i){
+            if(((coords[i].row == oldRow) && ((coords[i].column == oldColumn)))){
+                g -> coords[i].row = newRow;
+                g -> coords[i].column = newColumn;
+                return;
+            }
+        }
+    }
+}
+
