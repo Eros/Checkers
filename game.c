@@ -130,6 +130,31 @@ void handleMove(int oldRow, char oldColumn, int newRow, char newColumn, struct g
                 return;
             }
         }
+    } else if(player == 1 && search == 2){
+        removePiece(newRow, newColumn, g);
+
+        g -> player2 -= 1;
+
+        for(int i = 0; i < length - 1; ++i){
+            if(((coords[i].row == oldRow) && ((coords[i].column == oldColumn)))){
+                g -> coords[i].row = newRow;
+                g -> coords[i].column = newColumn;
+                return;
+            }
+        }
+    } else {
+        removePiece(newRow, newColumn, g);
+
+        g -> player1 -= 1;
+
+        for(int i = 0; i < length - 1; ++i){
+             if(((coords[i].row == oldRow) && (coords[i]).column == oldColumn)){
+                 g -> coords[i].row = newRow;
+                 g -> coords[i].column = newColumn;
+                 return;
+             }
+        }
     }
+    return;
 }
 
