@@ -165,4 +165,58 @@ void handleBoardDefaultValues(struct game * g) {
 void startGame(void){
     struct game * g = malloc(sizeof(struct game));
     g -> coords = malloc(24 * sizeof(struct cs));
+
+    g -> player1 = 12;
+    g -> player2 = 12;
+
+    handleBoardDefaultValues(g);
+    makeBoard(g);
+
+    int firstPlayer = 0;
+    int random = rand();
+    if(random % 2 == 0){
+        firstPlayer = 1;
+    }
+    if(random % 2 == 1){
+        firstPlayer = 2;
+    }
+
+    int currentTurn = firstPlayer;
+
+    printf("Player going first: %d", &firstPlayer);
+    printf("How to play: ");
+    printf("m: moves a piece");
+    printf("quit: exits the game");
+    printf("score: views the current score");
+    printf("print: reprints the board");
+
+    char command;
+
+    while(scanf(" %c ", &command) != 0){
+        if(winCheck(g) != 0){
+            printf("Player %d won the game! Play again? Y/N", winCheck(g));
+            if(command == 'y'){
+                //todo replay
+            }
+            if(command == 'p'){
+                makeBoard(g);
+            }
+            if(command == 'q'){
+                printf("Someone has decided to rage quit!");
+                return;
+            }
+            if(command == 'm'){
+                printf("Please enter the destination you wish to move to: \n");
+                int oldRow = 0;
+                char oldColumn = 0;
+                int newRow = 0;
+                char newColumun = 0;
+            }
+        }
+    }
+}
+
+void clearStdin(){
+    char discard[255] = "";
+    fgets(discard, sizeof(discard), fgets);
 }
