@@ -122,32 +122,86 @@ Checkers/fast:
 	$(MAKE) -f CMakeFiles\Checkers.dir\build.make CMakeFiles/Checkers.dir/build
 .PHONY : Checkers/fast
 
-debughandler/auth.obj: debughandler/auth.cpp.obj
+debughandler/channel.obj: debughandler/channel.cpp.obj
 
-.PHONY : debughandler/auth.obj
+.PHONY : debughandler/channel.obj
 
 # target to build an object file
-debughandler/auth.cpp.obj:
-	$(MAKE) -f CMakeFiles\Checkers.dir\build.make CMakeFiles/Checkers.dir/debughandler/auth.cpp.obj
-.PHONY : debughandler/auth.cpp.obj
+debughandler/channel.cpp.obj:
+	$(MAKE) -f CMakeFiles\Checkers.dir\build.make CMakeFiles/Checkers.dir/debughandler/channel.cpp.obj
+.PHONY : debughandler/channel.cpp.obj
 
-debughandler/auth.i: debughandler/auth.cpp.i
+debughandler/channel.i: debughandler/channel.cpp.i
 
-.PHONY : debughandler/auth.i
+.PHONY : debughandler/channel.i
 
 # target to preprocess a source file
-debughandler/auth.cpp.i:
-	$(MAKE) -f CMakeFiles\Checkers.dir\build.make CMakeFiles/Checkers.dir/debughandler/auth.cpp.i
-.PHONY : debughandler/auth.cpp.i
+debughandler/channel.cpp.i:
+	$(MAKE) -f CMakeFiles\Checkers.dir\build.make CMakeFiles/Checkers.dir/debughandler/channel.cpp.i
+.PHONY : debughandler/channel.cpp.i
 
-debughandler/auth.s: debughandler/auth.cpp.s
+debughandler/channel.s: debughandler/channel.cpp.s
 
-.PHONY : debughandler/auth.s
+.PHONY : debughandler/channel.s
 
 # target to generate assembly for a file
-debughandler/auth.cpp.s:
-	$(MAKE) -f CMakeFiles\Checkers.dir\build.make CMakeFiles/Checkers.dir/debughandler/auth.cpp.s
-.PHONY : debughandler/auth.cpp.s
+debughandler/channel.cpp.s:
+	$(MAKE) -f CMakeFiles\Checkers.dir\build.make CMakeFiles/Checkers.dir/debughandler/channel.cpp.s
+.PHONY : debughandler/channel.cpp.s
+
+debughandler/participant.obj: debughandler/participant.cpp.obj
+
+.PHONY : debughandler/participant.obj
+
+# target to build an object file
+debughandler/participant.cpp.obj:
+	$(MAKE) -f CMakeFiles\Checkers.dir\build.make CMakeFiles/Checkers.dir/debughandler/participant.cpp.obj
+.PHONY : debughandler/participant.cpp.obj
+
+debughandler/participant.i: debughandler/participant.cpp.i
+
+.PHONY : debughandler/participant.i
+
+# target to preprocess a source file
+debughandler/participant.cpp.i:
+	$(MAKE) -f CMakeFiles\Checkers.dir\build.make CMakeFiles/Checkers.dir/debughandler/participant.cpp.i
+.PHONY : debughandler/participant.cpp.i
+
+debughandler/participant.s: debughandler/participant.cpp.s
+
+.PHONY : debughandler/participant.s
+
+# target to generate assembly for a file
+debughandler/participant.cpp.s:
+	$(MAKE) -f CMakeFiles\Checkers.dir\build.make CMakeFiles/Checkers.dir/debughandler/participant.cpp.s
+.PHONY : debughandler/participant.cpp.s
+
+debughandler/types.obj: debughandler/types.cpp.obj
+
+.PHONY : debughandler/types.obj
+
+# target to build an object file
+debughandler/types.cpp.obj:
+	$(MAKE) -f CMakeFiles\Checkers.dir\build.make CMakeFiles/Checkers.dir/debughandler/types.cpp.obj
+.PHONY : debughandler/types.cpp.obj
+
+debughandler/types.i: debughandler/types.cpp.i
+
+.PHONY : debughandler/types.i
+
+# target to preprocess a source file
+debughandler/types.cpp.i:
+	$(MAKE) -f CMakeFiles\Checkers.dir\build.make CMakeFiles/Checkers.dir/debughandler/types.cpp.i
+.PHONY : debughandler/types.cpp.i
+
+debughandler/types.s: debughandler/types.cpp.s
+
+.PHONY : debughandler/types.s
+
+# target to generate assembly for a file
+debughandler/types.cpp.s:
+	$(MAKE) -f CMakeFiles\Checkers.dir\build.make CMakeFiles/Checkers.dir/debughandler/types.cpp.s
+.PHONY : debughandler/types.cpp.s
 
 game.obj: game.c.obj
 
@@ -212,9 +266,15 @@ help:
 	@echo ... rebuild_cache
 	@echo ... Checkers
 	@echo ... edit_cache
-	@echo ... debughandler/auth.obj
-	@echo ... debughandler/auth.i
-	@echo ... debughandler/auth.s
+	@echo ... debughandler/channel.obj
+	@echo ... debughandler/channel.i
+	@echo ... debughandler/channel.s
+	@echo ... debughandler/participant.obj
+	@echo ... debughandler/participant.i
+	@echo ... debughandler/participant.s
+	@echo ... debughandler/types.obj
+	@echo ... debughandler/types.i
+	@echo ... debughandler/types.s
 	@echo ... game.obj
 	@echo ... game.i
 	@echo ... game.s

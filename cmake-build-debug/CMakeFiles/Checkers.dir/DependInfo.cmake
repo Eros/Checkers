@@ -14,7 +14,9 @@ set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_C_TARGET_INCLUDE_PATH
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "F:/C++/Projects/Checkers/debughandler/auth.cpp" "F:/C++/Projects/Checkers/cmake-build-debug/CMakeFiles/Checkers.dir/debughandler/auth.cpp.obj"
+  "F:/C++/Projects/Checkers/debughandler/channel.cpp" "F:/C++/Projects/Checkers/cmake-build-debug/CMakeFiles/Checkers.dir/debughandler/channel.cpp.obj"
+  "F:/C++/Projects/Checkers/debughandler/participant.cpp" "F:/C++/Projects/Checkers/cmake-build-debug/CMakeFiles/Checkers.dir/debughandler/participant.cpp.obj"
+  "F:/C++/Projects/Checkers/debughandler/types.cpp" "F:/C++/Projects/Checkers/cmake-build-debug/CMakeFiles/Checkers.dir/debughandler/types.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

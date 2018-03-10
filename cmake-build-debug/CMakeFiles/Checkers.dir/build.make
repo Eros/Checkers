@@ -104,47 +104,99 @@ CMakeFiles/Checkers.dir/game.c.obj.provides: CMakeFiles/Checkers.dir/game.c.obj.
 CMakeFiles/Checkers.dir/game.c.obj.provides.build: CMakeFiles/Checkers.dir/game.c.obj
 
 
-CMakeFiles/Checkers.dir/debughandler/auth.cpp.obj: CMakeFiles/Checkers.dir/flags.make
-CMakeFiles/Checkers.dir/debughandler/auth.cpp.obj: ../debughandler/auth.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\C++\Projects\Checkers\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Checkers.dir/debughandler/auth.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Checkers.dir\debughandler\auth.cpp.obj -c F:\C++\Projects\Checkers\debughandler\auth.cpp
+CMakeFiles/Checkers.dir/debughandler/channel.cpp.obj: CMakeFiles/Checkers.dir/flags.make
+CMakeFiles/Checkers.dir/debughandler/channel.cpp.obj: ../debughandler/channel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\C++\Projects\Checkers\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Checkers.dir/debughandler/channel.cpp.obj"
+	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Checkers.dir\debughandler\channel.cpp.obj -c F:\C++\Projects\Checkers\debughandler\channel.cpp
 
-CMakeFiles/Checkers.dir/debughandler/auth.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Checkers.dir/debughandler/auth.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\C++\Projects\Checkers\debughandler\auth.cpp > CMakeFiles\Checkers.dir\debughandler\auth.cpp.i
+CMakeFiles/Checkers.dir/debughandler/channel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Checkers.dir/debughandler/channel.cpp.i"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\C++\Projects\Checkers\debughandler\channel.cpp > CMakeFiles\Checkers.dir\debughandler\channel.cpp.i
 
-CMakeFiles/Checkers.dir/debughandler/auth.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Checkers.dir/debughandler/auth.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\C++\Projects\Checkers\debughandler\auth.cpp -o CMakeFiles\Checkers.dir\debughandler\auth.cpp.s
+CMakeFiles/Checkers.dir/debughandler/channel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Checkers.dir/debughandler/channel.cpp.s"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\C++\Projects\Checkers\debughandler\channel.cpp -o CMakeFiles\Checkers.dir\debughandler\channel.cpp.s
 
-CMakeFiles/Checkers.dir/debughandler/auth.cpp.obj.requires:
+CMakeFiles/Checkers.dir/debughandler/channel.cpp.obj.requires:
 
-.PHONY : CMakeFiles/Checkers.dir/debughandler/auth.cpp.obj.requires
+.PHONY : CMakeFiles/Checkers.dir/debughandler/channel.cpp.obj.requires
 
-CMakeFiles/Checkers.dir/debughandler/auth.cpp.obj.provides: CMakeFiles/Checkers.dir/debughandler/auth.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\Checkers.dir\build.make CMakeFiles/Checkers.dir/debughandler/auth.cpp.obj.provides.build
-.PHONY : CMakeFiles/Checkers.dir/debughandler/auth.cpp.obj.provides
+CMakeFiles/Checkers.dir/debughandler/channel.cpp.obj.provides: CMakeFiles/Checkers.dir/debughandler/channel.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Checkers.dir\build.make CMakeFiles/Checkers.dir/debughandler/channel.cpp.obj.provides.build
+.PHONY : CMakeFiles/Checkers.dir/debughandler/channel.cpp.obj.provides
 
-CMakeFiles/Checkers.dir/debughandler/auth.cpp.obj.provides.build: CMakeFiles/Checkers.dir/debughandler/auth.cpp.obj
+CMakeFiles/Checkers.dir/debughandler/channel.cpp.obj.provides.build: CMakeFiles/Checkers.dir/debughandler/channel.cpp.obj
+
+
+CMakeFiles/Checkers.dir/debughandler/participant.cpp.obj: CMakeFiles/Checkers.dir/flags.make
+CMakeFiles/Checkers.dir/debughandler/participant.cpp.obj: ../debughandler/participant.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\C++\Projects\Checkers\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Checkers.dir/debughandler/participant.cpp.obj"
+	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Checkers.dir\debughandler\participant.cpp.obj -c F:\C++\Projects\Checkers\debughandler\participant.cpp
+
+CMakeFiles/Checkers.dir/debughandler/participant.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Checkers.dir/debughandler/participant.cpp.i"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\C++\Projects\Checkers\debughandler\participant.cpp > CMakeFiles\Checkers.dir\debughandler\participant.cpp.i
+
+CMakeFiles/Checkers.dir/debughandler/participant.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Checkers.dir/debughandler/participant.cpp.s"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\C++\Projects\Checkers\debughandler\participant.cpp -o CMakeFiles\Checkers.dir\debughandler\participant.cpp.s
+
+CMakeFiles/Checkers.dir/debughandler/participant.cpp.obj.requires:
+
+.PHONY : CMakeFiles/Checkers.dir/debughandler/participant.cpp.obj.requires
+
+CMakeFiles/Checkers.dir/debughandler/participant.cpp.obj.provides: CMakeFiles/Checkers.dir/debughandler/participant.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Checkers.dir\build.make CMakeFiles/Checkers.dir/debughandler/participant.cpp.obj.provides.build
+.PHONY : CMakeFiles/Checkers.dir/debughandler/participant.cpp.obj.provides
+
+CMakeFiles/Checkers.dir/debughandler/participant.cpp.obj.provides.build: CMakeFiles/Checkers.dir/debughandler/participant.cpp.obj
+
+
+CMakeFiles/Checkers.dir/debughandler/types.cpp.obj: CMakeFiles/Checkers.dir/flags.make
+CMakeFiles/Checkers.dir/debughandler/types.cpp.obj: ../debughandler/types.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\C++\Projects\Checkers\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Checkers.dir/debughandler/types.cpp.obj"
+	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Checkers.dir\debughandler\types.cpp.obj -c F:\C++\Projects\Checkers\debughandler\types.cpp
+
+CMakeFiles/Checkers.dir/debughandler/types.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Checkers.dir/debughandler/types.cpp.i"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\C++\Projects\Checkers\debughandler\types.cpp > CMakeFiles\Checkers.dir\debughandler\types.cpp.i
+
+CMakeFiles/Checkers.dir/debughandler/types.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Checkers.dir/debughandler/types.cpp.s"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\C++\Projects\Checkers\debughandler\types.cpp -o CMakeFiles\Checkers.dir\debughandler\types.cpp.s
+
+CMakeFiles/Checkers.dir/debughandler/types.cpp.obj.requires:
+
+.PHONY : CMakeFiles/Checkers.dir/debughandler/types.cpp.obj.requires
+
+CMakeFiles/Checkers.dir/debughandler/types.cpp.obj.provides: CMakeFiles/Checkers.dir/debughandler/types.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Checkers.dir\build.make CMakeFiles/Checkers.dir/debughandler/types.cpp.obj.provides.build
+.PHONY : CMakeFiles/Checkers.dir/debughandler/types.cpp.obj.provides
+
+CMakeFiles/Checkers.dir/debughandler/types.cpp.obj.provides.build: CMakeFiles/Checkers.dir/debughandler/types.cpp.obj
 
 
 # Object files for target Checkers
 Checkers_OBJECTS = \
 "CMakeFiles/Checkers.dir/main.c.obj" \
 "CMakeFiles/Checkers.dir/game.c.obj" \
-"CMakeFiles/Checkers.dir/debughandler/auth.cpp.obj"
+"CMakeFiles/Checkers.dir/debughandler/channel.cpp.obj" \
+"CMakeFiles/Checkers.dir/debughandler/participant.cpp.obj" \
+"CMakeFiles/Checkers.dir/debughandler/types.cpp.obj"
 
 # External object files for target Checkers
 Checkers_EXTERNAL_OBJECTS =
 
 Checkers.exe: CMakeFiles/Checkers.dir/main.c.obj
 Checkers.exe: CMakeFiles/Checkers.dir/game.c.obj
-Checkers.exe: CMakeFiles/Checkers.dir/debughandler/auth.cpp.obj
+Checkers.exe: CMakeFiles/Checkers.dir/debughandler/channel.cpp.obj
+Checkers.exe: CMakeFiles/Checkers.dir/debughandler/participant.cpp.obj
+Checkers.exe: CMakeFiles/Checkers.dir/debughandler/types.cpp.obj
 Checkers.exe: CMakeFiles/Checkers.dir/build.make
 Checkers.exe: CMakeFiles/Checkers.dir/linklibs.rsp
 Checkers.exe: CMakeFiles/Checkers.dir/objects1.rsp
 Checkers.exe: CMakeFiles/Checkers.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=F:\C++\Projects\Checkers\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Checkers.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=F:\C++\Projects\Checkers\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Checkers.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Checkers.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -154,7 +206,9 @@ CMakeFiles/Checkers.dir/build: Checkers.exe
 
 CMakeFiles/Checkers.dir/requires: CMakeFiles/Checkers.dir/main.c.obj.requires
 CMakeFiles/Checkers.dir/requires: CMakeFiles/Checkers.dir/game.c.obj.requires
-CMakeFiles/Checkers.dir/requires: CMakeFiles/Checkers.dir/debughandler/auth.cpp.obj.requires
+CMakeFiles/Checkers.dir/requires: CMakeFiles/Checkers.dir/debughandler/channel.cpp.obj.requires
+CMakeFiles/Checkers.dir/requires: CMakeFiles/Checkers.dir/debughandler/participant.cpp.obj.requires
+CMakeFiles/Checkers.dir/requires: CMakeFiles/Checkers.dir/debughandler/types.cpp.obj.requires
 
 .PHONY : CMakeFiles/Checkers.dir/requires
 

@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Checkers.dir/main.c.obj"
   "CMakeFiles/Checkers.dir/game.c.obj"
-  "CMakeFiles/Checkers.dir/debughandler/auth.cpp.obj"
+  "CMakeFiles/Checkers.dir/debughandler/channel.cpp.obj"
+  "CMakeFiles/Checkers.dir/debughandler/participant.cpp.obj"
+  "CMakeFiles/Checkers.dir/debughandler/types.cpp.obj"
   "Checkers.pdb"
   "Checkers.exe"
   "Checkers.exe.manifest"
