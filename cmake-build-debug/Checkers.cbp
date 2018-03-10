@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="F:/C++/Projects/Checkers/debughandler/auth.cpp">
+			<Option target="Checkers"/>
+		</Unit>
+		<Unit filename="F:/C++/Projects/Checkers/debughandler/auth.h">
+			<Option target="Checkers"/>
+		</Unit>
 		<Unit filename="F:/C++/Projects/Checkers/game.c">
 			<Option target="Checkers"/>
 		</Unit>

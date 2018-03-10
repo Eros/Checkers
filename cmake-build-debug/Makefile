@@ -122,6 +122,33 @@ Checkers/fast:
 	$(MAKE) -f CMakeFiles\Checkers.dir\build.make CMakeFiles/Checkers.dir/build
 .PHONY : Checkers/fast
 
+debughandler/auth.obj: debughandler/auth.cpp.obj
+
+.PHONY : debughandler/auth.obj
+
+# target to build an object file
+debughandler/auth.cpp.obj:
+	$(MAKE) -f CMakeFiles\Checkers.dir\build.make CMakeFiles/Checkers.dir/debughandler/auth.cpp.obj
+.PHONY : debughandler/auth.cpp.obj
+
+debughandler/auth.i: debughandler/auth.cpp.i
+
+.PHONY : debughandler/auth.i
+
+# target to preprocess a source file
+debughandler/auth.cpp.i:
+	$(MAKE) -f CMakeFiles\Checkers.dir\build.make CMakeFiles/Checkers.dir/debughandler/auth.cpp.i
+.PHONY : debughandler/auth.cpp.i
+
+debughandler/auth.s: debughandler/auth.cpp.s
+
+.PHONY : debughandler/auth.s
+
+# target to generate assembly for a file
+debughandler/auth.cpp.s:
+	$(MAKE) -f CMakeFiles\Checkers.dir\build.make CMakeFiles/Checkers.dir/debughandler/auth.cpp.s
+.PHONY : debughandler/auth.cpp.s
+
 game.obj: game.c.obj
 
 .PHONY : game.obj
@@ -185,6 +212,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... Checkers
 	@echo ... edit_cache
+	@echo ... debughandler/auth.obj
+	@echo ... debughandler/auth.i
+	@echo ... debughandler/auth.s
 	@echo ... game.obj
 	@echo ... game.i
 	@echo ... game.s
